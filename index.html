@@ -70,6 +70,30 @@ Interesting ==
             } : TRUE
 					</code></pre>
 				</section>
+				<section>
+					<pre><code>
+CONSTANT audience
+
+VARIABLES people
+
+Init == people = audience \cup {"jordy", "bekir"}
+
+InterestedPerson(p, t) ==
+    \/ p = "jordy"
+    \/ p = "bekir"
+
+Interesting ==
+    /\ \A topic \in
+            { "formal specification"
+            , "TLA+ and PlusCal"
+            , "Practical Example"
+            , "We as Apollo"
+            , "SBT and TLA+"
+            } :
+                \E person \in people :
+                    InterestedPerson(person, topic)
+					</code></pre>
+				</section>
 
 			</div>
 
