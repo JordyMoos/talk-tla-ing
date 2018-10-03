@@ -39,73 +39,115 @@
 			<div class="slides">
 
 				<section>
-					<img src="img/tla.png" alt="">
+					<img class="stretch" src="img/tla.png" alt="">
+					<aside class="notes">
+						<p>Formal Verification of Algorithms</p>
+					</aside>
 				</section>
 
 				<section>
-					<h1>"TITLE"</h1>
+					<img class="stretch" src="img/apollo.png" alt="">
+					<aside class="notes">
+						<p>Most of you might know us from our little moon project</p>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Schedule</h2>
-					<ul>
-						<li class="fragment fade-in">Why Formal specification</li>
-						<li class="fragment fade-in">TLA+ and PlusCal</li>
-						<li class="fragment fade-in">Practical Example</li>
-						<li class="fragment fade-in">We as Apollo</li>
-						<li class="fragment fade-in">SBR and TLA</li>
-					</ul>
+					<img class="stretch" src="img/baker.png" alt="">
+					<aside class="notes">
+						<p>But more importantly we are known as the creators and supporters of baker.</p>
+						<p>If you have not heard of Baker yet. And you are making API's then changes are that you could safe lots of time</p>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Schedule</h2>
-					<pre><code>
-Interesting ==
-    /\ \A topic \in
-            { "formal specification"
-            , "TLA+ and PlusCal"
-            , "Practical Example"
-            , "We as Apollo"
-            , "SBT and TLA+"
-            } : TRUE
-					</code></pre>
+					<img class="stretch" src="img/schedule.png" alt="">
+					<aside class="notes">
+
+					</aside>
 				</section>
-				<section>
-					<pre><code>
-CONSTANT audience
-
-VARIABLES people
-
-Init == people = audience \cup {"jordy", "bekir"}
-
-InterestedPerson(p, t) ==
-    \/ p = "jordy"
-    \/ p = "bekir"
-
-Interesting ==
-    /\ \A topic \in
-            { "formal specification"
-            , "TLA+ and PlusCal"
-            , "Practical Example"
-            , "We as Apollo"
-            , "SBT and TLA+"
-            } :
-                \E person \in people :
-                    InterestedPerson(person, topic)
-					</code></pre>
-				</section>
-
 
 				<section>
-					"Hanoi Tower Joke"
-					reminder for jordy
-				</section>
+					<img class="stretch" src="img/hour.png" alt="">
+					<aside class="notes">
 
-				<!-- Bekirs slides start here -->
+					</aside>
+				</section>
 
 				<section>
-					Bekirs slide
+					<img class="stretch" src="img/exchange-sort.png" alt="">
+					<aside class="notes">
+
+					</aside>
 				</section>
+
+				<section>
+					<img class="stretch" src="img/classified.jpg" alt="">
+					<aside class="notes">
+						<p>It gets even more complicated if you want to specify how the spaceships thrusters work when initiating a moon lander.</p>
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/leslie_1.png" alt="">
+					<aside class="notes">
+						<p>TLA+ is created by Leslie Lamport. Which can sometimes be spotted like this</p>
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/leslie_2.png" alt="">
+					<aside class="notes">
+						<p>or like this</p>
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/leslie_3.png" alt="">
+					<aside class="notes">
+						<p>and rarely like this</p>
+						<p>Leslie is mainly know for his work in distributed systems and has received a turing award for it.</p>
+						<p>He created TLA+ to..</p>
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/math.png" alt="">
+					<aside class="notes">
+						that is why he made pluscal
+					</aside>
+				</section>
+
+				<section>
+					tla -> model checker
+					repeat purpose of tla
+				</section>
+
+				<section>
+					pluscal -> tla -> model checker
+				</section>
+
+				<section>
+					<img class="stretch" src="img/money-transfer.jpg" alt="">
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/upside-down.jpeg" alt="">
+					<aside class="notes">
+
+					</aside>
+				</section>
+
+				<section>
+					<img class="stretch" src="img/hanoi.png" alt="">
+					<aside class="notes">
+
+					</aside>
+				</section>
+
 
 			</div>
 
